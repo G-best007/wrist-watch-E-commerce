@@ -1,0 +1,133 @@
+
+ :root{
+  /* primary color */
+  --dark-gray: #333333;
+
+  /* Accent color */
+  --blue: #007bff;
+
+  /* supporting color */
+  --light-gray: #aaaaaa;
+  --white: #ffffff;
+ }
+
+
+body{
+ font-family: sans-serif;
+ line-height: 1.3;
+ background: var(--dark-gray);
+ overflow-x: hidden;
+}
+
+.registration{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+
+}
+
+.signup{
+ width: 100%;
+ max-width: 100%;
+ background-color: var(--white);
+ border-radius: 10px;
+ height: 100%;
+ max-height: 100%;
+ display: none;
+}
+
+
+
+.signupImgparent{
+ width: 100%;
+ max-width: 100%;
+ margin-left: -12px;
+ height: 100%;
+ max-height: 100%;
+}
+
+.signupImg,.loginImg{
+ width: 100%;
+ max-width: 100%;
+ border-top-left-radius: 10px;
+ border-bottom-left-radius: 10px;
+ height: 100%;
+ max-height: 100%;
+}
+
+
+
+
+.line hr{
+   flex: 1;
+   border: none;
+   border-top: 1px solid #333;
+}
+
+
+.line span{
+   padding: 0 20px;
+   color: #333;
+}
+
+
+.inputtext{
+   border: 2px solid var(--dark-gray);
+}
+
+.inputtext:focus{
+   border: 2px solid var(--dark-gray);
+   box-shadow: none;
+}
+
+/* login page */
+.login{
+   background-color: var(--white);
+   border-radius: 10px;
+}
+
+.starIcon label::after{
+ content: ' *';
+ color: red;
+}
+
+.eyeIcon{
+   margin-top: 8px;
+   margin-right: 8px;
+   cursor: pointer;
+   background: transparent;
+   border-color: transparent;
+}
+
+.invalidEmail, .invalidPassword{
+   color: red;
+   display: none;
+}
+
+
+.eyeslash{
+   display: none;
+}
+/* end login page */
+
+
+@media(max-width:767px){
+   .signparent{
+      width: 100%;
+      max-width: 100%;
+   }
+
+   .sitebtns{
+      display: flex;
+      flex-direction: column;
+   }
+
+   .facebook{
+      margin-top: 10px;
+   }
+
+   .login{
+      padding-left: 8px;
+   }
+}
